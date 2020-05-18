@@ -1,1 +1,1 @@
-A Budgeting App to help those who want to find the cure for their wallet woes. 
+Cash Cure - A Budgeting App to help those who want to find the cure for their wallet woes. 
