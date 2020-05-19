@@ -5,13 +5,13 @@ const massive = require('massive');
 const path = require('path');
 
 const {CONNECTION_STRING, SERVER_PORT, SESSION_SECRET} = process.env;
-const {signin, register, signout, userSession, updatePassword} = require('./controller/authCtrl');
-const {getAllWords, getUserStudyWords, addWord, deleteWord} = require('./controller/wordsCrtl');
+const {login, register, logout, userSession, updatePassword} = require('./controller/authCtrl');
+const {getAllWords, getUserStudyWords, addWord, deleteWord} = require('./controller/valuesCrtl');
 
 const app = express();
 app.use(express.json());
 
-app.use( express.static( `${__dirname}/../build` ) );
+app.use(express.static( `${__dirname}/../build`) );
 
 app.use(session({
     secret: SESSION_SECRET,
@@ -40,6 +40,7 @@ app.get('/auth/user_session', userSession);
 
 // HOME
 app.get('api/values', getValues);
+app.get('api/values', getUserValues);
 app.put('/api/values/:id', editValue);
 app.delete('/api/values/:id', deleteValue); 
 app.get('*', (req, res)=>{
