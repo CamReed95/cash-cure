@@ -6,7 +6,7 @@ const path = require('path');
 
 const {CONNECTION_STRING, SERVER_PORT, SESSION_SECRET} = process.env;
 const {login, register, logout, userSession, updatePassword} = require('./controller/authCtrl');
-const {getValues, getUserValues, addValue, editValue, deleteValue} = require('./controller/valuesCtrl');
+const {getValues, getUserValues, addValue, editValue, deleteValue} = require('./controller/incomeCtrl', './controller/donationsCtrl', './controller/expensesCtrl', './controller/savingsCtrl' );
 
 const app = express();
 app.use(express.json());
@@ -28,8 +28,8 @@ massive({
         rejectUnauthorized: false
     }
 }).then(db => {
-    console.log('Connected to db')
     app.set('db', db)
+    console.log('Connected to db')
 }).catch( err => console.log(err));
 
 // AUTH
