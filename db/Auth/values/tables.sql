@@ -4,8 +4,30 @@ CREATE TABLE users (
     email VARCHAR(32)
 );
 
-CREATE TABLE vals (
-    vals_id SERIAL PRIMARY KEY,
+CREATE TABLE income (
+    income_id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(user_id),
-    vals_id INT REFERENCES vals(vals_id)
+    expected INTEGER,
+    actual INTEGER
+);
+
+CREATE TABLE donations (
+    donations_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(user_id),
+    expected INTEGER,
+    actual INTEGER
+);
+
+CREATE TABLE savings (
+    savings_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(user_id),
+    expected INTEGER,
+    actual INTEGER
+);
+
+CREATE TABLE expenses (
+    expenses_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(user_id),
+    expected INTEGER,
+    actual INTEGER
 );

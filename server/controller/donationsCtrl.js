@@ -6,7 +6,7 @@ module.exports = {
             const vals = await db.vals.get_values()
             res.status(200).send(vals)
         } catch (error) {
-            console.log('Error getting words', error)
+            console.log('Error getting values', error)
             res.status(500).send(error)
         }
     },
