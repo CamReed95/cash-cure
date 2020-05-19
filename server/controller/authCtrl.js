@@ -2,6 +2,31 @@ const bcrypt = require('bcrypt');
 
 module.exports = {
 
+    login: async (req, res) => {
+        try {
+            const db = req.app.get('db')
+            let {email, password} = req.body
+            let users = await db.auth.select_user(email)
+            let user = [0]
+
+            if (!user) {
+                return res.status(401).send('Incorrect email or password')
+            }
+
+            let isAuthenticated = bcrypt.compareSync(password, user.hashed_password)
+            if (!isAuthenticated) {
+                return res.status(401).send('Incorrect email or password')
+            }
+
+            delete user.password
+            req.session.user = user
+            res.send(req.session.user)
+        } catch (error) {
+            console.log('An error ocurred logging in', error)
+            res.status(500).send(error)
+        }
+    },
+    
     register: async (req, res) => {
         try {
             const db = req.app.get('db')
@@ -27,29 +52,14 @@ module.exports = {
         }
     },
 
-    login: async (req, res) => {
-        try {
-            const db = req.app.get('db')
-            let {email, password} = req.body
-            let users = await db.auth.select_user(email)
-            let user = [0]
+    logout: (req, res) => {
+        req.session.destroy();
+        res.sendStatus(200)
+    },
 
-            if (!user) {
-                return res.status(401).send('Incorrect email or password')
-            }
-
-            let isAuthenticated = bcrypt.compareSync(password, user.hashed_password)
-            if (!isAuthenticated) {
-                return res.status(401).send('Incorrect email or password')
-            }
-
-            delete user.password
-            req.session.user = user
-            res.send(req.session.user)
-        } catch (error) {
-            console.log('An error ocurred logging in', error)
-            res.status(500).send(error)
-        }
+    
+    userSession: (req, res) => {
+        console.log('~hit from Redux~')
     },
 
     updatePassword: async (req, res) => {
@@ -66,16 +76,5 @@ module.exports = {
             console.log('An error ocurred updating the password', error)
             res.status(500).send(error)
         }
-    },
-
-    logout: (req, res) => {
-        req.session.destroy();
-        res.sendStatus(200)
-    },
-
-    userSession: (req, res) => {
-        console.log('~hit from Redux~')
     }
 }
-
-        

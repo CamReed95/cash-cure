@@ -36,6 +36,18 @@ module.exports = {
         }
     },
 
+    editValue: async (req, res) => { // double check this function 
+        try {
+            const db = req.app.get('db')
+            const {id} = req.params
+            const vals = await db.vals.edit_Value([id]) 
+            res.status(200).send(vals)
+        } catch (error) {
+            console.log('Error editing value', error)
+            res.status(500).send(error)
+        }
+    },
+
     deleteValue: async (req, res) => {
         try {
             const db = req.app.get('db')

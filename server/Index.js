@@ -6,7 +6,7 @@ const path = require('path');
 
 const {CONNECTION_STRING, SERVER_PORT, SESSION_SECRET} = process.env;
 const {login, register, logout, userSession, updatePassword} = require('./controller/authCtrl');
-const {getAllWords, getUserStudyWords, addWord, deleteWord} = require('./controller/valuesCrtl');
+const {getValues, getUserValues, addValue, editValue, deleteValue} = require('./controller/valuesCtrl');
 
 const app = express();
 app.use(express.json());
