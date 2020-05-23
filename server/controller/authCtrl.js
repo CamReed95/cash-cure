@@ -21,6 +21,7 @@ module.exports = {
             delete user.password
             req.session.user = user
             res.send(req.session.user)
+
         } catch (error) {
             console.log('An error ocurred logging in', error)
             res.status(500).send(error)
@@ -46,6 +47,7 @@ module.exports = {
             delete newUser.password
             req.session.user = newUser
             res.send(req.session.user)
+
         } catch (error) {
             console.log('An error ocurred registering', error)
             res.status(500).send(error)
@@ -72,6 +74,7 @@ module.exports = {
             const hash = bcrypt.hashSync(password, salt)
             let response = await db.auth.update_user([hash, user_id])
             let user = response[0]
+            
         } catch (error) {
             console.log('An error ocurred updating the password', error)
             res.status(500).send(error)
