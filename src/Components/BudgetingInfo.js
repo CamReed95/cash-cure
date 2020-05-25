@@ -9,5 +9,6 @@
 //     )
 // }
 
-// default export;
+// export default Info;
+
 // how do I do this without state? 

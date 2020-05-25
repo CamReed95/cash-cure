@@ -27,15 +27,19 @@ render () {
             </div>
 
             <div className="donations-row-1">
+            <form onSubmit={this.handleSubmit}>
                 <p className="donations-1">To Donate</p>
                 <Input 
+                type="text"
                 className="planned-value-donations"
                 placeholder="$0.00"
                 ></Input>
                 <Input 
+                type="text"
                 className="received-value-donations"
                 placeholder="$0.00"
                 ></Input>
+                </form>
             </div>
 
         </div>

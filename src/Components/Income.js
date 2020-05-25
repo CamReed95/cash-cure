@@ -27,27 +27,44 @@ render () {
             </div>
 
             <div className="income-row-1">
+            <form onSubmit={this.handleSubmit}>
                 <p className="income-1">First Income</p>
                 <Input 
+                type="text"
                 className="planned-value-1"
                 placeholder="$0.00"
+                value={this.state.value}
+                onChange={(e) => this.changeHandler(e)}
                 ></Input>
                 <Input 
+                type="text"
                 className="received-value-1"
                 placeholder="$0.00"
+                value={this.state.value}
+                onChange={this.handleChange}
+                onChange={(e) => this.changeHandler(e)}
                 ></Input>
+                </form>
             </div>
 
             <div className="income-row-2">
+            <form onSubmit={this.handleSubmit}>
                 <p className="income-2">Second Income</p>
                 <Input 
+                type="text"
                 className="planned-value-2"
                 placeholder="$0.00"
+                value={this.state.value}
+                onChange={this.handleChange}
                 ></Input>
                 <Input 
+                type="text"
                 className="received-value-2"
                 placeholder="$0.00"
+                value={this.state.value}
+                onChange={this.handleChange}
                 ></Input>
+                </form>
             </div>
 
         </div>
