@@ -2,7 +2,11 @@ import React, {Component} from 'react';
 import './Home.css';
 import axios from 'axios';
 import Header from './Header/Header';
-import Footer from './Footer/Footer';
+import Footer from './Components/Footer';
+import Income from './Income';
+import Donations from './Donations';
+import Savings from './Savings';
+import Expenses from './Expenses';
 
 class Home extends Component {
     constructor() {
@@ -36,18 +40,13 @@ class Home extends Component {
         return (
             <div className="home-base">
                 
-            <Header/>
-
-            <div className='main-div'>
-
-            {/* <button className='next-word-button' onClick={this.nextWord}>Next Word</button> */}
-                
-                <div></div>
-
-                {/* <button className='add-word-button' onClick={() => this.addWord(this.state.words[this.state.index].word_id)}>Add Word to Study List</button> */}
-
-                </div>   
-
+                <Header/>
+                <div className="main-comps">
+                    <Income/>
+                    <Donations/>
+                    <Savings/>
+                    <Expenses/>
+                </div>
                 <Footer/>
             </div>
         )

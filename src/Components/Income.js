@@ -55,3 +55,5 @@ render () {
 }
 
 }
+
+export default Income;
