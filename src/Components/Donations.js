@@ -21,31 +21,19 @@ render () {
         <div className="donations-box">
 
             <div className="info-row-2">
-                <h1 className="Income">Income</h1>
-                <p className="planned">Planned</p>
-                <p className="received">Received</p>
+                <p className="Income-2">Income</p>
+                <p className="planned-2">Planned</p>
+                <p className="received-2">Received</p>
             </div>
 
             <div className="donations-row-1">
-                <h2 className="donations-1">To Give</h2>
+                <p className="donations-1">To Donate</p>
                 <Input 
                 className="planned-value-donations"
                 placeholder="$0.00"
                 ></Input>
                 <Input 
                 className="received-value-donations"
-                placeholder="$0.00"
-                ></Input>
-            </div>
-
-            <div className="donations-row-2">
-                <h3 className="income-2">Second Income</h3>
-                <Input 
-                className="planned-value-donations-2"
-                placeholder="$0.00"
-                ></Input>
-                <Input 
-                className="received-value-donations-2"
                 placeholder="$0.00"
                 ></Input>
             </div>

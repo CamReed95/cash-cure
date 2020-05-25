@@ -18,18 +18,24 @@ componentDidMount() {
 
 render () {
     return (
-        <div>
+        <div className="savings-box">
 
             <div className="info-row-3">
-
+                <p className="Income-3">Income</p>
+                <p className="planned-3">Planned</p>
+                <p className="received-3">Received</p>
             </div>
 
             <div className="savings-row-1">
-
-            </div>
-
-            <div className="savings-row-2">
-
+                <p className="savings-1">Save</p>
+                <Input 
+                className="planned-value-savings"
+                placeholder="$0.00"
+                ></Input>
+                <Input 
+                className="received-value-savings"
+                placeholder="$0.00"
+                ></Input>
             </div>
 
         </div>
