@@ -1,28 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './reset.css'
+import {Route, Switch} from 'react-router-dom';
+import './index.css';
 
-// include routes in here
+import Landing from './Components/Landing';
+import Home from './Components/Home';
+import BudgetingInfo from './Components/BudgetingInfo';
+import UpdatePassword from './Components/Auth/UpdatePassword';
 
-function App() {
+const App = () => { 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/" component={Landing}/>
+        <Route path="/Home" component={Home}/>
+        <Route path="/BudgetingInfo" component={BudgetingInfo}/>
+        <Route path="/Settings" component={UpdatePassword}/>
+        {/* <Route path="/Signin" component={Signin}/>
+        <Route path="/Register" component={Register}/> */}
+        {/* <Route path="/Vocab" component={Vocab}/> */}
+      </Switch>
     </div>
-  );
-}
+  )
+};
 
 export default App;
