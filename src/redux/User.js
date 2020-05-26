@@ -94,6 +94,6 @@ export function login(userInfo) {
 export function logout() {
     return {
         type: LOGOUT_USER,
-        payload: axios.delete('/auth/logout')
+        payload: axios.get('/auth/logout')
     }
 }

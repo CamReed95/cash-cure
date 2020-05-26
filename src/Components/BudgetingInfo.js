@@ -1,14 +1,13 @@
 // import React from 'react';
-// import './BusgetingInfo.css';
+// import './BudgetingInfo.css';
 
 // const Info = () => {
 //     return (
 //         <div className="BudgetingInfo">
-//             place info text, stats here
+                // <h1></h1>
+//             <p>Text goes here</p>
 //         </div>
 //     )
 // }
 
 // export default Info;
-
-// how do I do this without state? 

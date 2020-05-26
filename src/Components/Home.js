@@ -21,16 +21,6 @@ class Home extends Component {
         axios.get('/api/values').then((res) => this.setState({values: res.data}))
     }
 
-    // toggleHandler() {
-    //     let {greek} = this.state
-    //     this.setState({greek: !greek})
-    // } 
-
-    // nextWord() {
-    //     let {index} = this.state
-    //     this.setState({index: index + 1})
-    // }
-
     editValue(id) {
         axios.put(`/api/values/${id}`).then(() => console.log('Value edited!'))
     }
