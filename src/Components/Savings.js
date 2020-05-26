@@ -9,9 +9,6 @@ class Savings extends Component {
             index: 0,
             values: []
         }
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
-
     }
 
 componentDidMount() {
@@ -30,7 +27,7 @@ render () {
 
             <div className="savings-row-1">
                 <p className="savings-1">Save</p>
-                <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit}>
                 <input 
                 type="text"
                 className="planned-value-savings"
@@ -45,13 +42,11 @@ render () {
                 value={this.state.value}
                 onChange={this.handleChange}
                 />
-                </form>
+            </form>
             </div>
 
         </div>
     )
-}
-
-}
+}}
 
 export default Savings;
