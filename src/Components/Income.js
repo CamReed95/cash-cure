@@ -9,12 +9,18 @@ class Income extends Component {
             index: 0,
             values: []
         }
-
+        this.changeHandler = this.changeHandler.bind(this);
     }
 
 componentDidMount() {
     axios.get('api/values').then((res) => this.setState({values: res.data}))
 }
+
+changeHandler(e) {
+    this.setState({
+      [e.target]: e.target.value, // check this line 
+    });
+  }
 
 render () {
     return (
@@ -27,8 +33,8 @@ render () {
             </div>
 
             <div className="income-row-1">
-            <form onSubmit={this.handleSubmit}>
                 <p className="income-1">First Income</p>
+            <form onSubmit={this.handleSubmit}>
                 <Input 
                 type="text"
                 className="planned-value-1"
@@ -41,30 +47,29 @@ render () {
                 className="received-value-1"
                 placeholder="$0.00"
                 value={this.state.value}
-                onChange={this.handleChange}
                 onChange={(e) => this.changeHandler(e)}
                 ></Input>
-                </form>
+            </form>
             </div>
 
             <div className="income-row-2">
-            <form onSubmit={this.handleSubmit}>
                 <p className="income-2">Second Income</p>
+            <form onSubmit={this.handleSubmit}>
                 <Input 
                 type="text"
                 className="planned-value-2"
                 placeholder="$0.00"
                 value={this.state.value}
-                onChange={this.handleChange}
+                onChange={(e) => this.changeHandler(e)}
                 ></Input>
                 <Input 
                 type="text"
                 className="received-value-2"
                 placeholder="$0.00"
                 value={this.state.value}
-                onChange={this.handleChange}
+                onChange={(e) => this.changeHandler(e)}
                 ></Input>
-                </form>
+            </form>
             </div>
 
         </div>
