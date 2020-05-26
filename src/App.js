@@ -1,5 +1,5 @@
 import React from 'react';
-import './reset.css'
+// import './reset.css'
 import {Route, Switch} from 'react-router-dom';
 import './index.css';
 

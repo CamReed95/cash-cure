@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import './Home.css';
+// import './Home.css';
 import axios from 'axios';
-import Header from './Header/Header';
-import Footer from './Components/Footer';
+import Header from './Header';
+import Footer from './Footer';
 import Income from './Income';
 import Donations from './Donations';
 import Savings from './Savings';
