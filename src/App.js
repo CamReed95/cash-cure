@@ -16,9 +16,6 @@ const App = () => {
         <Route path="/Home" component={Home}/>
         <Route path="/BudgetingInfo" component={BudgetingInfo}/>
         <Route path="/Settings" component={UpdatePassword}/>
-        {/* <Route path="/Signin" component={Signin}/>
-        <Route path="/Register" component={Register}/> */}
-        {/* <Route path="/Vocab" component={Vocab}/> */}
       </Switch>
     </div>
   )
