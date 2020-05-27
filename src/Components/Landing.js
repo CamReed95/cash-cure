@@ -29,7 +29,7 @@ toggleAuth() {
                 <div className="landing-main">
 
                     <div className="landing-header">
-                    <h1>Cash Cure</h1>
+                    <h1>CA$H cure</h1>
 
                     <button className='login-button' onClick={this.toggleSignin} >LOG IN</button> 
                     {this.state.auth && <Signin/>}
@@ -39,9 +39,9 @@ toggleAuth() {
 
                     </div>
 
-                    <h2 className="call-to-action">Call to Action</h2>
+                    <h2 className="call-to-action">Discover the cure for your cash</h2>
 
-                    <p className="landing-text">Place text here </p>
+                    <p className="landing-text">We'll get you from canker to cure by giving you the tools you need to easily manage your wallet.</p>
 
                 </div>
 
