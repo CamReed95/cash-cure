@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // import './Landing.css';
-// import Auth from './Auth/Auth';
+import Auth from './Auth/Auth';
 import Signin from './Auth/Login';
 import Register from './Auth/Register';
 
@@ -43,8 +43,6 @@ toggleAuth() {
 
                     <p className="landing-text">Place text here </p>
 
-                    
-                    
                 </div>
 
             </div>
