@@ -1,13 +1,13 @@
-// import React from 'react';
+import React from 'react';
 // import './BudgetingInfo.css';
 
-// const Info = () => {
-//     return (
-//         <div className="BudgetingInfo">
-                // <h1></h1>
-//             <p>Text goes here</p>
-//         </div>
-//     )
-// }
+const Info = () => {
+    return (
+        <div className="BudgetingInfo">
+                <h1>The Benefits of Budgeting</h1>
+            <p>Text goes here</p>
+        </div>
+    )
+}
 
-// export default Info;
+export default Info;

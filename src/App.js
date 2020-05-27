@@ -1,5 +1,5 @@
 import React from 'react';
-// import './reset.css'
+import './reset.css'
 import {Route, Switch} from 'react-router-dom';
 import './index.css';
 
@@ -14,7 +14,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Landing}/>
         <Route path="/Home" component={Home}/>
-        {/* <Route path="/BudgetingInfo" component={BudgetingInfo}/> */}
+        <Route path="/BudgetingInfo" component={BudgetingInfo}/>
         <Route path="/Settings" component={UpdatePassword}/>
       </Switch>
     </div>
