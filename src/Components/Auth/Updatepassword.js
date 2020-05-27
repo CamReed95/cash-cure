@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Password extends Component {
+class UpdatePassword extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -48,4 +48,4 @@ class Password extends Component {
     }
 }
 
-export default Password;
+export default UpdatePassword;

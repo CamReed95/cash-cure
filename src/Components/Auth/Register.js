@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {register} from '../../redux/user';
+import {register} from '../../Redux/User';
 
 class Register extends React.Component {
     constructor(props) {
