@@ -28,17 +28,22 @@ toggleAuth() {
 
                 <div className="landing-main">
 
+                    <div className="landing-header">
                     <h1>Cash Cure</h1>
 
-                    <h2>Call to Action</h2>
-
-                    <p className="landing-text">PLace text here </p>
-
-                    <button className='signin-button' onClick={this.toggleSignin} >SIGN IN</button> 
+                    <button className='login-button' onClick={this.toggleSignin} >LOG IN</button> 
                     {this.state.auth && <Signin/>}
 
                     <button className='register-button' onClick={this.toggleRegister}>REGISTER</button>
                     {this.state.auth && <Register/>}
+
+                    </div>
+
+                    <h2 className="call-to-action">Call to Action</h2>
+
+                    <p className="landing-text">Place text here </p>
+
+                    
                     
                 </div>
 
