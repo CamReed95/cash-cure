@@ -21,7 +21,7 @@ render () {
         <div className="expenses-box">
 
             <div className="info-row-4">
-                <p className="Income-4">Income</p>
+                <p className="Income-4">Expenses</p>
                 <p className="planned-4">Planned</p>
                 <p className="received-4">Received</p>
             </div>
