@@ -49,6 +49,8 @@ render () {
                 value={this.state.value}
                 onChange={(e) => this.changeHandler(e)}
                 />
+                {/* <button className="income-add-button"onClick={() => this.props.addValue( this.state.newPost )}> New Value </button>
+                <button className="income-update-button"onClick={() => this.props.editValue( this.state.newPost )}> Update Value </button> */}
                 <input 
                 type="text"
                 className="received-value-1"
@@ -56,6 +58,8 @@ render () {
                 value={this.state.value}
                 onChange={(e) => this.changeHandler(e)}
                 />
+                {/* <button className="income-add-button"onClick={() => this.props.addValue( this.state.newPost )}> New Value </button>
+                <button className="income-update-button"onClick={() => this.props.editValue( this.state.newPost )}> Update Value </button> */}
             </form>
             </div>
 
@@ -69,6 +73,8 @@ render () {
                 value={this.state.value}
                 onChange={(e) => this.changeHandler(e)}
                 />
+                {/* <button className="income-add-button"onClick={() => this.props.addValue( this.state.newPost )}> New Value </button>
+                <button className="income-update-button"onClick={() => this.props.editValue( this.state.newPost )}> Update Value </button> */}
                 <input 
                 type="text"
                 className="received-value-2"
@@ -76,6 +82,8 @@ render () {
                 value={this.state.value}
                 onChange={(e) => this.changeHandler(e)}
                 />
+                {/* <button className="income-add-button"onClick={() => this.props.addValue( this.state.newPost )}> New Value </button>
+                <button className="income-update-button"onClick={() => this.props.editValue( this.state.newPost )}> Update Value </button> */}
             </form>
             </div>
 

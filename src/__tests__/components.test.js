@@ -12,11 +12,16 @@ describe('testing for the values arr in Income component', () => {
 })
 
 // test button in render in income to make sure button works
+describe('Adds new value button works', () => {
+    it()
+})
 
 // test button in render in logout comp. to make sure button works 
-
+describe('Update value button works', () => {
+    it()
+})
 // test button in render for logging in 
-
+describe('')
 // test button in register comp. 
 
 // 

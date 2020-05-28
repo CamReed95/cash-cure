@@ -40,8 +40,6 @@ class UpdatePassword extends React.Component {
                     />
                 </form>
 
-                {/* <button> </button> // do I need the button here?  */}
-
             </div>
             
         )
