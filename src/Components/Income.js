@@ -6,7 +6,6 @@ class Income extends Component {
     constructor() {
         super();
         this.state = {
-            index: 0,
             values: []
         }
         this.handleSubmit = this.handleSubmit.bind(this);
