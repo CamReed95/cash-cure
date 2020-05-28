@@ -6,9 +6,8 @@ import {toggleLogin} from './utilities/functions';
 import {toggleRedirect} from './utilities/functions';
  
 describe("unit tests for cash cure", () => {
-    it("test handle submit", () => {function handleSubmit(val) {
-        expect (ans)
-        }
+    it('test handleSubmit', () => {
+        
     })
 
     it('test changeHandler', () => {
