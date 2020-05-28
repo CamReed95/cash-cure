@@ -14,7 +14,7 @@ class Income extends Component {
     }
 
 componentDidMount() {
-    axios.get('api/values').then((res) => this.setState({values: res.data}))
+    axios.get('/api/income').then((res) => this.setState({values: res.data}))
 }
 
 handleSubmit(e) {
@@ -30,6 +30,7 @@ changeHandler(e) {
 
 
 render () {
+    console.log(this.state.values)
     return (
         <div className="income-box">
 
@@ -80,6 +81,7 @@ render () {
             </div>
 
         </div>
+        // add buttons and a div to display all the values, similar to noDB
     )
 }
 
