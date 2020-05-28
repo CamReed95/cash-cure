@@ -37,13 +37,15 @@ class Auth extends Component {
 
         return (
             <div className='auth-main'>
-                {display ? 
+                {display 
+                
+                ? 
                     <Login 
                         toggle = {this.toggleLogin}
                         redirect = {this.toggleRedirect}/>
                 :
                     <Register 
-                        toggle = {this.toggleSignin}
+                        toggle = {this.toggleLogin}
                         redirect = {this.toggleRedirect}/>
                 }
             </div>

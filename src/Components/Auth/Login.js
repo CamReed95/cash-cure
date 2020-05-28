@@ -46,11 +46,9 @@ class Login extends React.Component {
                         value={this.state.password}
                         onChange={(e) => this.changeHandler(e)}
                     />
-                    
+                    <button className="">LOG IN</button>
                 </form>
-                {/* {this.props.location ? null : 
-                <button className='click-register-button' onClick={this.props.toggle}>Need to Register?</button>
-                } */}
+                <button className='' onClick={this.props.toggle}>Need to Register?</button>
             </div>
         );
     }

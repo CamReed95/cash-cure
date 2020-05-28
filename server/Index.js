@@ -6,7 +6,8 @@ const path = require('path');
 
 const {CONNECTION_STRING, SERVER_PORT, SESSION_SECRET} = process.env;
 const {login, register, logout, userSession, updatePassword} = require('./controller/authCtrl');
-const {getValues, getUserValues, addValue, editValue, deleteValue} = require('./controller/incomeCtrl', './controller/donationsCtrl', './controller/expensesCtrl', './controller/savingsCtrl' );
+const incomeCtrl = require('./controller/incomeCtrl');
+// other lines
 
 const app = express();
 app.use(express.json());
@@ -39,13 +40,13 @@ app.get('/auth/logout', logout);
 app.get('/auth/user_session', userSession);
 
 // HOME
-app.get('api/values', getValues);
-app.get('api/values', getUserValues);
-app.put('/api/values/:id', editValue);
-app.delete('/api/values/:id', deleteValue); 
-app.get('*', (req, res)=>{
-    res.sendFile(path.join(__dirname, '../build/index.html'));
-});
 
-const port = 5500;
+app.post('/api/income', incomeCtrl.addValue);
+app.get('/api/income', incomeCtrl.getUserValues);
+app.put('/api/income/:id', incomeCtrl.editValue);
+app.delete('/api/income/:id', incomeCtrl.deleteValue); 
+// app.get('*', (req, res)=>{
+//     res.sendFile(path.join(__dirname, '../build/index.html'));
+// }); // FOR HOSTING
+
 app.listen(SERVER_PORT, () => console.log(`Listening on port ${SERVER_PORT}`));

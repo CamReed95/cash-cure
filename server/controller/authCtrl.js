@@ -7,7 +7,7 @@ module.exports = {
             const db = req.app.get('db')
             let {email, password} = req.body
             let users = await db.auth.select_user(email)
-            let user = [0]
+            let user = users[0]
 
             if (!user) {
                 return res.status(401).send('Incorrect email or password')
@@ -33,13 +33,13 @@ module.exports = {
             const db = req.app.get('db')
             let {email, password} = req.body
             let users = await db.auth.select_user(email)
-            let user = user[0]
+            let user = users[0]
 
             if (user) {
                 return res.status(409).send('That email is already in use')
             }
 
-            const salt = bcrypt.getSaltSync(10)
+            const salt = bcrypt.genSaltSync(10)
             const hash = bcrypt.hashSync(password, salt)
             let response = await db.auth.add_user([email, hash])
             let newUser = response[0]

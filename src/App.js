@@ -7,6 +7,7 @@ import Landing from './Components/Landing';
 import Home from './Components/Home';
 import BudgetingInfo from './Components/BudgetingInfo';
 import UpdatePassword from './Components/Auth/UpdatePassword';
+import Auth from './Components/Auth/Auth';
 
 const App = () => { 
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/Home" component={Home}/>
         <Route path="/BudgetingInfo" component={BudgetingInfo}/>
         <Route path="/UpdatePassword" component={UpdatePassword}/>
+        <Route path="/Auth" component={Auth}/>
       </Switch>
     </div>
   )
