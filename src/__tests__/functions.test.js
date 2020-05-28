@@ -1,34 +1,29 @@
-import {add} from '../utilities/functions';
 
-// Income comp.
-// (1) handleSubmit 
+import {handleSubmit} from './utilities/functions';
+import {changeHandler} from './utilities/functions';
+import {toggleAuth} from './utilities/functions';
+import {toggleLogin} from './utilities/functions';
+import {toggleRedirect} from './utilities/functions';
+ 
+describe("unit tests for cash cure", () => {
+    it("test handle submit", () => {function handleSubmit(val) {
+        expect (ans)
+        }
+    })
 
-describe ("tests for handleSubmit function", () => {
-    expect()
-})
+    it('test changeHandler', () => {
+        expect()
+    })
 
-// (2) changeHandler
+    it('test toggleAuth', () => {
+        expect()
+    })
 
-describe ("tests for changeHandler function ", () => {
-    expect()
-})
+    it('test toggleLogin', () => {
+        expect()
+    })
 
-//landing comp
-// (3) toggleAuth 
-
-describe ("tests for toggleAuth", () => {
-    expect()
-})
-
-// auth.js
-// (4) toggleLogin
-
-describe ("tests for toggleLogin function", () => {
-    expect()
-})
-
-// (5) toggleRedirect
-
-describe ("tests toggleRedirect function", () => {
-    expect()
+    it('test toggleRedirect', () => {
+        expect()
+    }) 
 })

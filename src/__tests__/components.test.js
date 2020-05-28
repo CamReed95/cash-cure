@@ -8,7 +8,6 @@ describe('testing for the values arr in Income component', () => {
         const {container} = render(<Income/>)
         expect(container.textContent).toContain("Collecting values...")
     })
-
 })
 
 // test button in render in income to make sure button works
