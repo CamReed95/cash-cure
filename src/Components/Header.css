@@ -36,3 +36,7 @@
 .links {
     color: white;
 }
+
+.home-link {
+    text-decoration: none;
+}

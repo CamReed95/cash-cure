@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './Home.css';
 import axios from 'axios';
 import Header from './Header';
-import Footer from './Footer';
+// import Footer from './Footer';
 import Income from './Income';
 import Donations from './Donations';
 import Savings from './Savings';
@@ -37,7 +37,7 @@ class Home extends Component {
                     <div className="components"><Savings/></div>
                     <div className="components"><Expenses/></div>
                 </div>
-                <Footer/>
+                {/* <Footer/> */}
             </div>
         )
     }

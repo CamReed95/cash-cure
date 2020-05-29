@@ -31,7 +31,7 @@ changeHandler(e) {
 render () {
     console.log(this.state.values)
     return (
-        <div className="income-box">
+        <div className="income-box-1">
 
             <div className="info-row-1">
                 <p className="Income">INCOME</p>
