@@ -32,10 +32,10 @@ class Home extends Component {
                 
                 <Header/>
                 <div className="main-comps">
-                    <Income/>
-                    <Donations/>
-                    <Savings/>
-                    <Expenses/>
+                   <div className="components"><Income/></div>
+                    <div className="components"><Donations/></div>
+                    <div className="components"><Savings/></div>
+                    <div className="components"><Expenses/></div>
                 </div>
                 <Footer/>
             </div>
