@@ -22,8 +22,8 @@ render () {
 
             <div className="info-row-4">
                 <p className="Income-4">EXPENSES</p>
-                <p className="planned-4">Planned</p>
-                <p className="received-4">Received</p>
+                {/* <p className="planned-4">Planned</p>
+                <p className="received-4">Received</p> */}
             </div>
 
             <div className="expenses-row-1">

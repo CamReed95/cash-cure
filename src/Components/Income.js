@@ -35,8 +35,8 @@ render () {
 
             <div className="info-row-1">
                 <p className="Titles">INCOME</p>
-                <p className="Titles">Planned</p>
-                <p className="Titles">Received</p>
+                {/* <p className="Titles">Planned</p>
+                <p className="Titles">Received</p> */}
             </div>
 
             <div className="income-row-1">
@@ -62,32 +62,10 @@ render () {
                 <button className="income-update-button"onClick={() => this.props.editValue( this.state.newPost )}> Update Value </button> */}
             </form>
             </div>
+                </div>
 
-            <div className="income-row-2">
-                <p className="income-2">Second Income</p>
-            <form onSubmit={this.handleSubmit}>
-                <input
-                type="text"
-                className="planned-value-2"
-                placeholder="$0.00"
-                value={this.state.value}
-                onChange={(e) => this.changeHandler(e)}
-                />
-                {/* <button className="income-add-button"onClick={() => this.props.addValue( this.state.newPost )}> New Value </button>
-                <button className="income-update-button"onClick={() => this.props.editValue( this.state.newPost )}> Update Value </button> */}
-                <input 
-                type="text"
-                className="received-value-2"
-                placeholder="$0.00"
-                value={this.state.value}
-                onChange={(e) => this.changeHandler(e)}
-                />
-                {/* <button className="income-add-button"onClick={() => this.props.addValue( this.state.newPost )}> New Value </button>
-                <button className="income-update-button"onClick={() => this.props.editValue( this.state.newPost )}> Update Value </button> */}
-            </form>
-            </div>
+            
 
-        </div>
         // add buttons and a div to display all the values, similar to noDB
     )
 }

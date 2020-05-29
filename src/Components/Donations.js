@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-// import './Donations.css';
+import './Donations.css';
 
 class Donations extends Component {
     constructor() {
@@ -22,8 +22,8 @@ render () {
 
             <div className="info-row-2">
                 <p className="Income-2">DONATIONS</p>
-                <p className="planned-2">Planned</p>
-                <p className="received-2">Received</p>
+                {/* <p className="planned-2">Planned</p>
+                <p className="received-2">Received</p> */}
             </div>
 
             <div className="donations-row-1">
