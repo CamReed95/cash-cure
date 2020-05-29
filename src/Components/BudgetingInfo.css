@@ -1,0 +1,27 @@
+.bf-div {
+    width: 100vw;
+    height: 100vh;
+}
+
+.BudgetingInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits {
+    font-family: sans-serif;
+    color: rgb(71, 71, 71);
+}
+
+.info-text {
+    width: 80vw;
+    height: 800px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgb(71, 71, 71),
+    
+}
+
