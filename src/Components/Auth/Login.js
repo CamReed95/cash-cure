@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {login} from '../../Redux/User';
+import './Login.css';
 
 
 class Login extends React.Component {
@@ -30,9 +31,14 @@ class Login extends React.Component {
     }
     render() {
         return(
+            <div className="main-div">
             <div className='Login-container'>
+                
                 <form onSubmit={this.loginHandler}>
+                    <div>
                     <input
+                        
+                        className="login-email-input"
                         placeholder='email'
                         type='text'
                         name='email'
@@ -46,10 +52,12 @@ class Login extends React.Component {
                         value={this.state.password}
                         onChange={(e) => this.changeHandler(e)}
                     />
-                    <button className="">LOG IN</button>
+                    <button className="login-login-button">LOG IN</button>
+                    <button className='' onClick={this.props.toggle}>Need to Register?</button>
+                    </div>
                 </form>
-                <button className='' onClick={this.props.toggle}>Need to Register?</button>
-            </div>
+                </div>
+                </div>
         );
     }
 }

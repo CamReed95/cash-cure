@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 // import {connect} from 'react-redux';
-// import './Header.css';
+import './Header.css';
 
 const Header = () => {
     return (
         <header className='header-main'>
             <div className="parent-div">
                 <div className='app-name'>
-                    <Link to='/Home' className='Title'>Cash Cure</Link>
+                    <Link to='/Home' className='Title'>CA$Hcq2ure</Link>
                 </div>
                 <div className='home-links'>
                     {/* <Link to='/Home' className='links'>Home</Link> */}

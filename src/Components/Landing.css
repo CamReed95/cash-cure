@@ -1,0 +1,94 @@
+.landing-base {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    /* flex-direction: column; */
+    /* background-image: url("/landing-bri2.jpg"); */
+    background-size: cover;
+    background-color: white;
+}
+
+.landing-main {
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+/* display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch; */
+
+h1 {
+    float: left;
+    font-weight: 700;
+    font-family: helvetica;
+    font-size: 50px;
+    /* letter-spacing: 10px; */
+    color: rgb(9, 117, 5);
+    font-style: italic;
+    margin-top: 50px;
+    margin-left: 100px;
+    
+}
+
+.call-to-action {
+    /* font-family: serif; */
+    font-family:Helvetica;
+    font-variant: small-caps;
+    color: rgb(41, 41, 41);
+    font-size: 55px;
+    float: top;
+    margin-top: 175px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.login-button {
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   border-radius: 5px;
+   border: 1px solid orange;
+   /* border-color: orange; */
+   width: 200px;
+   height: 25px;
+   margin-bottom: 25px;
+   background-color: white;
+   /* font-style: italic; */
+}
+
+.register-button {
+    font-family: Arial, Helvetica, sans-serif;
+   color: whitesmoke;
+   border-radius: 5px;
+   border: none;
+   width: 200px;
+   height: 25px;
+   margin-bottom: auto;
+   /* background-color: rgb(13, 94, 175); */
+   background-color: rgb(19, 127, 236);
+}
+
+.landing-text {
+    font-family: serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+    float: top;
+    /* margin-bottom: 200px; */
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 12px;
+}

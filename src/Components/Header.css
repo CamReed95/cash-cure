@@ -1,0 +1,32 @@
+.header-main {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(14, 96, 177);
+}
+
+.parent-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-name {
+    font-weight: 700;
+    font-family: helvetica;
+    font-size: 50px;
+    /* letter-spacing: 10px; */
+    color: rgb(9, 117, 5);
+    font-style: italic;
+    text-decoration: none;
+}
+
+.home-links {
+    font-family: sans-serif;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+}
