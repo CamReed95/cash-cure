@@ -1,0 +1,35 @@
+.income-box-1 {
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    
+}
+
+.info-row-1 {
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.Titles {
+    display: flex;
+    flex-direction: row;
+}
+
+.income-row-1 {
+
+}
+
+.income-1 {
+
+}
+
+.income-row-2 {
+
+}
+
+.income-2 {
+
+}
+
+

@@ -34,9 +34,9 @@ render () {
         <div className="income-box-1">
 
             <div className="info-row-1">
-                <p className="Income">INCOME</p>
-                <p className="planned">Planned</p>
-                <p className="received">Received</p>
+                <p className="Titles">INCOME</p>
+                <p className="Titles">Planned</p>
+                <p className="Titles">Received</p>
             </div>
 
             <div className="income-row-1">
