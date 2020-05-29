@@ -13,6 +13,7 @@
 .benefits {
     font-family: sans-serif;
     color: rgb(71, 71, 71);
+    text-align: left;
 }
 
 .info-text {
@@ -20,8 +21,7 @@
     height: 800px;
     margin-top: 20px;
     font-family: sans-serif;
-    font-size: 30px;
-    color: rgb(71, 71, 71),
-    
+    font-size: 20px;
+    color: rgb(71, 71, 71)
 }
 

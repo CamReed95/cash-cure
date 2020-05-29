@@ -7,7 +7,7 @@ const Header = () => {
         <header className='header-main'>
             <div className="parent-div">
                 <div className='app-name-2'>
-                    <Link to='/Home'>CA$Hcure</Link>
+                    <Link className="home-link" to='/Home'>CA$Hcure</Link>
                 </div>
                 <div className='home-links'>
                     

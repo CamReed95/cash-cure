@@ -16,7 +16,7 @@
 .app-name-2 {
     font-weight: 700;
     font-family: helvetica;
-    font-size: 50px;
+    font-size: 35px;
     color: orange;
     font-style: italic;
     text-decoration: none;
@@ -30,13 +30,15 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-right: 25px;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 .links {
     color: white;
+    text-decoration: none;
 }
 
 .home-link {
+    color: rgb(255, 238, 0);
     text-decoration: none;
 }
